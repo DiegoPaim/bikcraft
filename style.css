@@ -1,0 +1,84 @@
+
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-bg {
+  background-color: black;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.menu a {
+  color: white;
+  padding: 16px 0px;
+  position: relative;
+}
+
+.menu a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0; /*porcentagem em relação ao espaço do elemento pai */
+  background-color: white;
+  margin-top: 4px;
+  transition: 0.3s;
+  position: absolute;
+}
+
+.menu a:hover:after { /*pq n dois pontos depois do after? n seria o hover por último?  */
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .header {
+    gap: 20px;
+  }
+
+  .menu a {
+    background-color: #111;
+    padding: 16px;
+    border-radius: 4px;
+  }
+
+  .menu a:hover {
+    background-color: #2e2e2e;
+  }
+
+  .menu a::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    gap: 12px;
+  }
+}
