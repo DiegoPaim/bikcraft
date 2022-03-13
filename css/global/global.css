@@ -1,0 +1,25 @@
+
+body {
+  margin: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 600px; /* temporário, para visualizar, já q estou fazendo uma sessão por vez */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0px;
+}
+
+h1, p, ul {
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 4px;
+}
