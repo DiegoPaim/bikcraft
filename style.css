@@ -2,16 +2,26 @@
 body {
   margin: 0px;
   font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 600px; /* temporário, para visualizar, já q estou fazendo uma sessão por vez */
 }
 
 ul {
   list-style-type: none;
-  margin: 0px;
   padding: 0px;
+}
+
+h1, p, ul {
+  margin: 0px;
 }
 
 a {
   text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 4px;
 }
 
 .header-bg {
@@ -24,7 +34,7 @@ a {
   gap: 20px;
   box-sizing: border-box;
   max-width: 1200px;
-  margin: auto;
+  margin: auto; /* centralizando o posicionamento no grid */
   padding: 20px;
   justify-content: space-between;
   align-items: center;
@@ -81,4 +91,110 @@ a {
   .header {
     gap: 12px;
   }
+}
+
+.intro-bg {
+  background-color: #111;
+  box-shadow: inset 0px -120px 0px white;
+}
+
+.intro {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1200px;
+  gap: 40px;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: auto;   /* centralizando junto com o header, alinhando os paddings e margins  */
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+
+.introconteúdo {
+  align-self: end;
+  margin-bottom: 200px;
+}
+
+.introconteúdo h1, p {
+  margin-bottom: 20px;
+}
+
+.introconteúdo h1 {
+  font-size: 4rem;
+  line-height: 1.06;
+}
+
+.introconteúdo p {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: hsla(0, 0%, 75%, 1);
+}
+
+.introconteúdo span {
+  color: #FFBF00;
+}
+
+.introconteúdo button {
+  grid-column: 1;
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 4px;
+  background: linear-gradient(#FFBF00, #F2A60C);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  color: #332200;
+  font-size: 1.125rem;
+  line-height: 1.33;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.introconteúdo button:hover {
+  background: linear-gradient(#ffb60d, #e59317);
+}
+
+@media (max-width: 1200px) {
+  .introconteúdo h1 {
+    font-size: 48px;
+  }
+
+  .introconteúdo p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .intro-bg {
+    box-shadow: inset 0px -60px 0px white;
+  }
+
+  .intro {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .introconteúdo  {
+    margin-bottom: 0px;
+  }
+
+  .introconteúdo h1 {
+    font-size: 32px;
+    margin-top: 32px;
+    text-align: center;
+  }
+
+  .introconteúdo button {
+  font-size: 12px;
+  padding: 12px;
+  }
+
+  .intro img {
+    max-height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
 }
