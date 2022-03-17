@@ -8,10 +8,8 @@
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  box-sizing: border-box;
-  max-width: 1200px;
-  margin: auto; /* centralizando o posicionamento no grid */
-  padding: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   justify-content: space-between;
   align-items: center;
 }
