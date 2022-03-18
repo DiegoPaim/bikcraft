@@ -54,7 +54,7 @@
   width: 24px;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .tecnologia-bg {
     box-shadow: initial;
   }
