@@ -4,7 +4,7 @@
   box-shadow: inset 0px 80px var(--cor0), inset 0px -80px var(--cor0);
 }
 
-.container {
+.tecnologia-bg > .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 40px;
@@ -59,7 +59,7 @@
     box-shadow: initial;
   }
 
-  .container {
+  .tecnologia-bg > .container {
     grid-template-columns: 1fr;
   }
 
