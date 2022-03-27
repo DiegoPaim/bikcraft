@@ -23,6 +23,16 @@
   cursor: pointer;
   font-family: "Poppins";
   font-weight: 600;
+  max-width: max-content;
+}
+
+.botão.secundário {
+  background: var(--cor10);
+  color: var(--cor2);
+}
+
+.botão.secundário:hover {
+  background: var(--cor9);
 }
 
 .botão:hover {
