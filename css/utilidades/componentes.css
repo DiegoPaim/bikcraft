@@ -35,6 +35,25 @@
   background: var(--cor9);
 }
 
+.botão.seta {
+  display: flex;
+  align-items: center;
+}
+
+.botão.seta:hover::after {
+  transform: translateX(4px);
+}
+
+.botão.seta::after {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 10px;
+  margin-left: 12px;
+  background: url(../../img/icones/seta.svg);
+  transition: transform 0.2s;
+}
+
 .botão:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
