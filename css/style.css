@@ -18,4 +18,6 @@
 @import url(bicicletas/bicicleta.css);
 @import url(bicicletas/seguro.css);
 @import url(contato/contato.css);
-
+@import url(contato/formulario.css);
+@import url(contato/loja.css);
+@import url(orçamento/orçamento.css);
