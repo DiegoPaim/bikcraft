@@ -127,3 +127,52 @@
   display: grid;
   gap: 20px;
 }
+
+.orçamento-detalhes {
+  background-color: var(--cor0);
+  padding: 20px;
+  display: none;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 4px;
+  align-items: center;
+}
+
+.orçamento-detalhes li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.orçamento-detalhes li img {
+  width: 16px;
+  margin-right: 8px;
+}
+
+.orçamento-produto input:checked + label + .orçamento-detalhes {
+  display: grid;
+}
+
+@media (max-width: 1200px) {
+  .orçamento-produto,
+  .orçamento-dados {
+    padding: 32px;
+  }
+}
+
+@media (max-width: 800px) {
+  .orçamento {
+    grid-template-columns: 1fr;
+  }
+  .orçamento-produto {
+    border-radius: 5px 5px 0 0;
+  }
+  .orçamento-dados {
+    border-radius: 0 0 5px 5px;
+  }
+}
+
+@media (max-width: 400px) {
+  .orçamento-produto {
+    grid-template-columns: 1fr;
+  }
+}
