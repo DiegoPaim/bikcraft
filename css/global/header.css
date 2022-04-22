@@ -37,7 +37,8 @@
   position: absolute;
 }
 
-.menu a:hover:after { /*pq n dois pontos depois do after? n seria o hover por último?  */
+.menu a:hover:after,
+.menu a.ativo:after {
   width: 100%;
 }
 
