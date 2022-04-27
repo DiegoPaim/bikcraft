@@ -4,8 +4,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preload" href="css/style.css" as="style">
-  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="shortcut icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="css/style.min.css" as="style">
+  <link rel="stylesheet" href="css/style.min.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -28,11 +31,11 @@
   <main class="intro-bg">
     <div class="intro container">
       <div class="introconteúdo">
-        <h1 class="cor-branco font-1-xxl">Bicicletas feitas sob medida<span class="cor-primária">.</span></h1>
-        <p class="cor-cinza font-2-l">Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
-        <button class="botão">Selecione a Sua</button>
+        <h1 class="cor-branco font-1-xxl fadeInDown" data-anime="200">Bicicletas feitas sob medida<span class="cor-primária">.</span></h1>
+        <p class="cor-cinza font-2-l fadeInDown" data-anime="400">Bicicletas elétricas de alta precisão e qualidade,  feitas sob medida para o cliente. Explore o mundo na sua velocidade com a Bikcraft.</p>
+        <button class="botão fadeInDown" data-anime="600">Selecione a Sua</button>
       </div>       
-      <picture>
+      <picture class="fadeInDown" data-anime="800">
         <source media="(max-width: 800px)" srcset="img/bicicletas/nimbus.jpg">
         <img src="img/fotos/introducao.jpg" alt="bicicletaprincipal" width="1280" height="1600">
       </picture>    
@@ -45,21 +48,21 @@
     </div>
 
     <ul>
-      <li>
+      <li class="fadeInRight" data-anime="200">
         <a href="bicicleta/magic.html">
           <img src="img/bicicletas/magic-home.jpg" alt="Bicicleta Magic">
           <h3 class="font-1-xl cor-10">Magic Might</h3>
           <span class="font-2-m cor-8">R$ 2499</span>
         </a>
       </li>
-      <li>
+      <li class="fadeInRight" data-anime="400">
         <a href="bicicleta/nimbus.html">
           <img src="img/bicicletas/magic-home.jpg" alt="Bicicleta Magic">
           <h3 class="font-1-xl cor-10">Nimbus Stark</h3>
           <span class="font-2-m cor-8">R$ 4999</span>
         </a>
       </li>
-      <li>
+      <li class="fadeInRight" data-anime="600">
         <a href="bicicleta/nebula.html">
           <img src="img/bicicletas/magic-home.jpg" alt="Bicicleta Magic">
           <h3 class="font-1-xl cor-10">Nebula Cosmic</h3>
@@ -194,6 +197,8 @@
       <p class="footer-copy font-2-m cor-6 ">Bicraft Alguns Direitos Reservados</p>
     </div>
   </footer>
+
+  <script src="javascript/plugins/simple-anime.js"></script>
   <script src="javascript/script.js"></script>
 </body>
 </html>

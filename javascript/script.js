@@ -62,3 +62,10 @@ function clickimg(img) {
 }
 
 bicicletas.forEach(clickimg)
+
+// Animação
+
+if (window.SimpleAnime) {
+  new SimpleAnime()
+}
+
